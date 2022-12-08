@@ -2,7 +2,7 @@
 class for the MAZE:
     used Tkinter
     added walls, pitts
-    Size is 100x100
+    Size is 10x10
     pixel size is 50x50 of each cell
 '''
 
@@ -13,7 +13,7 @@ import random
 import time 
 
 #---SIZE---
-UNIT=40 #pixels per cell basically horizontally and vertically
+UNIT=50 #pixels per cell basically horizontally and vertically
 MAZE_H=10
 MAZE_W=10
 
