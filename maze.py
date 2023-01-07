@@ -44,27 +44,27 @@ class Maze(tk.Tk, object):
         self.wallblocks.append(self.canvas.create_rectangle(
             wall_center[0] - 15, wall_center[1] - 15,
             wall_center[0] + 15, wall_center[1] + 15,
-            fill='black'))
+            fill='red'))
         
     def add_pitt(self,x,y):
         pit_center = origin + np.array([UNIT * x, UNIT*y])
         self.pitblocks.append(self.canvas.create_rectangle(
             pit_center[0] - 15, pit_center[1] - 15,
             pit_center[0] + 15, pit_center[1] + 15,
-            fill='blue'))
+            fill='brown'))
     
     def add_agent(self, x=0, y=0):
         agent_center = origin + np.array([UNIT * x, UNIT*y])
         self.agent = self.canvas.create_rectangle(
             agent_center[0] - 15, agent_center[1] - 15,
             agent_center[0] + 15, agent_center[1] + 15,
-            fill='red')
+            fill='blue')
     
     def add_goal(self, x=10, y=10):
         goal_center=origin+np.array([UNIT*x, UNIT*y])
         self.goal= self.canvas.create_oval(goal_center[0] - 15, goal_center[1] - 15,
             goal_center[0] + 15, goal_center[1] + 15,
-            fill='yellow')
+            fill='black')
 
     '''
         Building the maze
